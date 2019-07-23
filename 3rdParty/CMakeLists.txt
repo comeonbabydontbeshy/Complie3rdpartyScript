@@ -22,3 +22,4 @@ MESSAGE(STATUS "architecture : ${Architecture}")
 
 ADD_SUBDIRECTORY(boost)
 ADD_SUBDIRECTORY(libpgsql)
+ADD_SUBDIRECTORY(libcutl)

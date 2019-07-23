@@ -14,7 +14,7 @@ FOREACH(pack ${Package})
     GET_FILENAME_COMPONENT(ExtName ${pack} EXT)
     SET(PackageUnzipName ${FileName})
     IF (${pack} MATCHES "tar.gz")
-        EXECUTE_PROCESS(COMMAND tar xvzf ${pack} 
+        EXECUTE_PROCESS(COMMAND tar xvf ${pack} 
                         WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
                         RESULT_VARIABLE UnzipRet)
     ENDIF (${pack} MATCHES "*.tar.gz")
