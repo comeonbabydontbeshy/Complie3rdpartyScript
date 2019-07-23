@@ -21,3 +21,4 @@ MESSAGE(STATUS "build type : ${CMAKE_BUILD_TYPE}")
 MESSAGE(STATUS "architecture : ${Architecture}")
 
 ADD_SUBDIRECTORY(boost)
+ADD_SUBDIRECTORY(libpgsql)

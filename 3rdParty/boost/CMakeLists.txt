@@ -45,7 +45,7 @@ MESSAGE(STATUS "Link : ${Link}")
 MESSAGE(STATUS "Compiler : ${Compiler}")
 MESSAGE(STATUS "OutputPath : ${OutputPath}")
 
-EXECUTE_PROCESS(COMMAND sh ${ScriptPath} ${PackageUnzipPath} ${Architecture} ${CMAKE_BUILD_TYPE} ${Link} ${Compiler} ${OutputPath}
+EXECUTE_PROCESS(COMMAND sh -x ${ScriptPath} ${PackageUnzipPath} ${Architecture} ${CMAKE_BUILD_TYPE} ${Link} ${Compiler} ${OutputPath}
                 WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
                 RESULT_VARIABLE ret)
                 
