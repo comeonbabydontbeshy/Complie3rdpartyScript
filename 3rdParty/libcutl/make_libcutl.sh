@@ -12,8 +12,9 @@ then
     cflagsParam=$cflagsParam"-g "
 fi
 
+cflagsParam=${cflagsParam}" -I${OutputPath}/include"
+
 cd ${PackageUnzipPath}
-CXXFLAGS="$cflagsParam" ./configure --prefix=${OutputPath} --enable-static --disable-shared --disable-threads 
-#--with-boost=${OutputPath}
+CXXFLAGS="$cflagsParam" LDFLAGS="-L${OutputPath}/lib" ./configure --prefix=${OutputPath} --enable-static --disable-shared --disable-threads 
 make 
 make install

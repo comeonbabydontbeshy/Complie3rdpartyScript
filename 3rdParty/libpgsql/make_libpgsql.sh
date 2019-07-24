@@ -20,6 +20,6 @@ fi
 
 cd ${PackageUnzipPath}
 CXXFLAGS="$cflagsParam" ./configure --prefix=${OutputPath}
-cd ./src/interfaces/libpq/
+#cd ./src/interfaces/libpq/
 make 
 make install
